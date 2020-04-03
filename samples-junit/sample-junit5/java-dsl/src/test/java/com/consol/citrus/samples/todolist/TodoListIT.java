@@ -61,7 +61,7 @@ public class TodoListIT {
     @Test
     @CitrusTest
     void testPost(@CitrusResource TestRunner runner) {
-        runner.variable("todoName", "citrus:concat('todo_', citrus:randomNumber(4))");
+        runner.variable("todoName", "citrus:concat('todo_', citrus:randomNumber(3))");
         runner.variable("todoDescription", "Description: ${todoName}");
 
         runner.http(action -> action

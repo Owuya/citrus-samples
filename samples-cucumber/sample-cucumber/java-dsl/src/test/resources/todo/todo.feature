@@ -1,5 +1,6 @@
 Feature: Todo app
 
+	@Addtodo
   Scenario: Add todo entry
     Given Todo list is empty
     When I add entry "Code something"
